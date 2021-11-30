@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Cotización del Dolar</string>
+    <string name="titulo_pantalla">COTIZACION DEL DOLAR</string>
+    <string name="dolar_oficial">Dolar Oficial</string>
+    <string name="dolar_blue">Dolar Blue</string>
+    <string name="dolar_soja">Dolar Soja</string>
+    <string name="dolar_contado_con_liqui">Dolar Contado con Liqui</string>
+    <string name="dolar_turista">Dolar Turista</string>
+    <string name="dolar_bolsa">Dolar Bolsa</string>
+    <string name="historico">Histórico</string>
+    <string name="recargar">Recargar</string>
+    <string name="recargando">Recargando los valores</string>
+    <string name="fecha_posterior">Esa fecha aún no llegó</string>
+    <string name="problema_conexion">No se pudo conectar a internet. Verificá tu conexión.</string>
+    <string name="error_bbdd">Error en la base de datos. Intente luego por favor.</string>
+    <string name="correcto">Correcto</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="fecha_averiguar">Seleccioná una fecha</string>
+    <string name="evolucion_ultimos_dias">EVOLUCION DEL DOLAR\nEN LOS ULTIMOS 10 DIAS</string>
+</resources>
