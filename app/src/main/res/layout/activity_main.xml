@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0FFC0"
+    android:orientation="vertical"
+    android:weightSum="8"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="#90D090"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/captain"
+            android:gravity="center"
+            android:text="@string/titulo_pantalla"
+            android:textColor="@color/black" />\
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/digifaw"
+                android:gravity="left"
+                android:text="hora"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/digifaw"
+                android:gravity="right"
+                android:text="fecha"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="8"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/recargar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:tooltipText="@string/recargar"
+            android:layout_gravity="center_vertical"
+            android:onClick="recargar"
+            android:background="@drawable/reload" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/evolucion"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:tooltipText="@string/evolucion_ultimos_dias"
+            android:layout_gravity="center_vertical"
+            android:onClick="evolucion"
+            android:background="@drawable/evolucion" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/historico"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:tooltipText="@string/historico"
+            android:layout_gravity="center_vertical"
+            android:onClick="calendario"
+            android:background="@drawable/historia" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dolarOficial"
+        style="@style/menu_inicial"
+        android:text="@string/dolar_oficial" />
+
+    <TextView
+        android:id="@+id/dolarBlue"
+        style="@style/menu_inicial"
+        android:text="@string/dolar_blue" />
+
+    <TextView
+        android:id="@+id/dolarSoja"
+        style="@style/menu_inicial"
+        android:text="@string/dolar_soja" />
+
+    <TextView
+        android:id="@+id/dolarContadoConLiqui"
+        style="@style/menu_inicial"
+        android:text="@string/dolar_contado_con_liqui" />
+
+    <TextView
+        android:id="@+id/dolarTurista"
+        style="@style/menu_inicial"
+        android:text="@string/dolar_turista" />
+
+    <TextView
+        android:id="@+id/dolarBolsa"
+        style="@style/menu_inicial"
+        android:text="@string/dolar_bolsa" />
+</LinearLayout>
